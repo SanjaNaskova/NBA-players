@@ -1,0 +1,29 @@
+table{    
+    width:100%;
+    max-width: 1000px;
+    margin: 100px auto;
+    text-align: center;
+}
+
+table, th, td {
+  padding: 8px;
+  border: 1px solid #5c6675;
+  box-shadow: 1px 2px 2px 0px #ecedf6;
+}
+
+th{
+  letter-spacing: 1px;
+  font-size: 20px;
+  color: #3e3f3f;
+}
+
+.removeBtn{
+  width: 100px;
+  padding: 4px;
+  border-radius: 8px;
+  color: inherit;
+  background: #a0abeb;
+  border: 1px solid #918d8d;
+  box-shadow: 3px 5px 3px 0px #d3d4e4;
+  cursor: pointer;
+}

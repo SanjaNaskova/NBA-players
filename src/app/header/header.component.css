@@ -1,0 +1,40 @@
+
+nav{
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 5px;
+    margin: 0 auto 80px;
+    border-bottom: 1px solid #c0abab;
+}
+
+.logo{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.myTeam{
+    width: 100px;
+    height: 40px;
+    border-radius: 12px;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    background: #1D4289;
+    color: #ffffff;
+    line-height: 40px;
+    box-shadow: 2px 2px 3px #8888df;
+}
+
+img{
+   width: 80px;
+}
+
+h2{
+    margin: 0;
+    padding: 0;
+    color: #3e3f3f;
+    border-bottom: 1px solid #c0bdbd;
+}

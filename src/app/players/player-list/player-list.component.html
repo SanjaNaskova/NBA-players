@@ -1,0 +1,22 @@
+<app-players-edit (searchPlayer)="onSearchPlayer($event)" (playerPosition)="onSearchPosition($event)"
+  (changeOrder)="onChangeOrder()"></app-players-edit>
+<div>
+  <table>
+    <tr>
+      <th class="empty"></th>
+      <th>ID</th>
+      <th>Full Name</th>
+      <th>Position</th>
+      <th>Team</th>
+      <th>City</th>
+    </tr>
+    <tr *ngFor="let player of players">
+      <td><button (click)="addPlayerToMyTeam(player)">Add to my team</button></td>
+      <td>{{ player.id }}</td>
+      <td>{{ player.first_name }} {{ player.last_name }}</td>
+      <td>{{ player.position }}</td>
+      <td>{{ player.team.full_name }}</td>
+      <td>{{ player.team.city }}</td>
+    </tr>
+  </table>
+</div>

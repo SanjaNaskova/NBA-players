@@ -1,0 +1,21 @@
+<div class="filter-menu">
+  <input type="text" placeholder="Filter by name" [(ngModel)]="playerName" />
+  <button class="editBtns" (click)="onSearchPalyer()">Search</button>
+  <div class="row">
+    <div class="col">
+      <div ngbDropdown class="d-inline-block">
+        <button class="btn btn-outline-primary drop editBtns" id="dropdownBasic1" ngbDropdownToggle>
+          Sort By Postition
+        </button>
+        <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+          <button ngbDropdownItem (click)="seachByPosition('')">All</button>
+          <button ngbDropdownItem (click)="seachByPosition('G')">G</button>
+          <button ngbDropdownItem (click)="seachByPosition('F')">F</button>
+          <button ngbDropdownItem (click)="seachByPosition('C')">C</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <button class="editBtns asc" type="button" (click)="changeOrderBy()">asc / desc </button>
+</div>
